@@ -1,6 +1,6 @@
 name: Makefile CI
 name: Install Theos
-      uses: Randomblock1/theos-action@v1.4
+uses: Randomblock1/theos-action@v1.4
             
 
 on:
