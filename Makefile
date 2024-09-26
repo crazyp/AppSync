@@ -1,5 +1,5 @@
 export TARGET = iphone:clang:latest:14.0
-export ARCHS = arm64 arm64e
+export ARCHS = arm64
 export DEBUG = 0
 
 THEOS_PACKAGE_DIR_NAME = debs
