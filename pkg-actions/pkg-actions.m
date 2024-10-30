@@ -72,7 +72,7 @@ int main(int argc, const char **argv) {
 
 		if ((kCFCoreFoundationVersionNumber >= kCFCoreFoundationVersionNumber_iOS_8_0) && (kCFCoreFoundationVersionNumber < kCFCoreFoundationVersionNumber_iOS_10_0)) {
 			#ifdef POSTINST
-				if (access(INSTALLD_PLIST_PATH_L, F_OK) == -1) {
+				if (access)(INSTALLD_PLIST_PATH_L, F_OK) == -1) {
 					// NOTE: I thought about removing the symlinked installd plist in the prerm, but decided against it as such an operation has a non-zero chance of somehow going horribly wrong in some kind of edge case.
 					printf("This device appears to be running iOS 8 or 9. Creating a symbolic link to the installd LaunchDaemon…\n");
 					symlink(INSTALLD_PLIST_PATH_SL, INSTALLD_PLIST_PATH_L);
